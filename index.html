@@ -11,49 +11,43 @@
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Gym Ratch</title>
+	<script src="https://kit.fontawesome.com/642870eb52.js" crossorigin="anonymous"></script>
 </head>
 
-<!-- All of the visible code in the page belongs in the body tag -->
 <body>
-	<!-- Header is a sematic tag page that aids readability -->
 	<header>
-		<a href="#main">Skip to Main Content</a>
+		<a href="#main" class="skip">Skip to Main Content</a>
 		
 		<div class="navbar">
-			<img src="images/rat_favicon.jpg" alt="website logo" class="logo">
 			<nav>
 				<ul>
-					<li class="active"><a href = "index.html" >GYM RATCH</a></li>
-					<li><a href = "gettingstarted.html">GETTING STARTED</a></li>
-					<li><a href = "formbasics.html">FORM BASICS</a></li>
-					<li><a href = "aboutme.html">ABOUT ME</a></li>
+					<li><a href="index.html"><img src="images/rat_favicon.jpg" alt="website logo" class="logo"></a></li>
+					<li class="active"><a href = "index.html">gym ratch</a></li>
+					<li><a href = "gettingstarted.html">getting started</a></li>
+					<li><a href = "formbasics.html">form basics</a></li>
+					<li><a href = "aboutme.html">about me</a></li>
 				</ul>
 			</nav>
 		</div>
 
-		<div class="divbarspacer"></div>
-
-		<h1>Welcome!</h1>
-
-		<div class="smallerspacer"></div>
+		<div class = "largeintropic">
+			<h1>Welcome!</h1>
+			<p>Ready to start your fitness journey?</p>
+		</div>
 	</header>
 
-	<!-- Every page should have a main tag for accessibility -->
-	<main>
+	<main id="main">
 		<p> Welcome in! My name is Rachel Cheng and I am a certified gym rat(ch).
 			Regardless of whether you're just starting out with weight training
 			or are looking to refresh on some form pointers, this is a great place to be!
 			I'm so happy you're here and I'm excited for you wherever you are in your
 			fitness journey right now.</p>
 
-		<img src = "images/bicep_pose.jpg" width="200" alt = "Rachel flexing her biceps"/>
-		
-		<!-- Make sure your anchor tags have a link (href) and a clickable component -->
 		<p>Add more content here about what your page is about?</p>
 	</main>
 
-	<!-- Footer is a sematic tag page that aids readability -->
 	<footer>
+		<i class="fa-solid fa-dumbbell"></i>
 		<p>RACHEL CHENG &copy; 2022</p>
 	</footer>
 </body>

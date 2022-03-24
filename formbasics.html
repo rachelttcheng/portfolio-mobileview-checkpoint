@@ -13,29 +13,28 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>Form Basics</title>
+	<script src="https://kit.fontawesome.com/642870eb52.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
-		<a href="#main">Skip to Main Content</a>
+		<a href="#main" class="skip">Skip to Main Content</a>
 		
 		<div class="navbar">
-			<img src="images/rat_favicon.jpg" alt="website logo" class="logo">
 			<nav>
 				<ul>
-					<li><a href = "index.html" >GYM RATCH</a></li>
-					<li><a href = "gettingstarted.html">GETTING STARTED</a></li>
-					<li class="active"><a href = "formbasics.html">FORM BASICS</a></li>
-					<li><a href = "aboutme.html">ABOUT ME</a></li>
+					<li><a href="index.html"><img src="images/rat_favicon.jpg" alt="website logo" class="logo"></a></li>
+					<li><a href = "index.html" >gym ratch</a></li>
+					<li><a href = "gettingstarted.html">getting started</a></li>
+					<li class="active"><a href = "formbasics.html">form basics</a></li>
+					<li><a href = "aboutme.html">about me</a></li>
 				</ul>
 			</nav>
 		</div>
 
-		<div class="divbarspacer"></div>
-		<h1>My Favorite Exercises and How to Do Them</h1>
-		<div class="smallerspacer"></div>
+		<h1 class="regularpageheader">My Favorite Exercises and How to Do Them</h1>
 	</header>
 
-	<main>
+	<main id="main">
 		<p>Talk about pull day here. Pull day works your back and biceps.</p>
 		<img src = "images/back_pose.jpg" width="200" alt = "Rachel poorly flexing her back muscles"/>
 		<img src = "images/back_anatomy.jpg" width="200" alt = "An anatomical diagram showing the back's traps, lats, and rhomboids."/>
@@ -54,6 +53,7 @@
 	</main>
 
 	<footer>
+		<i class="fa-solid fa-dumbbell"></i>
 		<p>RACHEL CHENG &copy; 2022</p>
 	</footer>
 </body>

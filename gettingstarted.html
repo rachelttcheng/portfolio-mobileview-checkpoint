@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!--  TIP 
-	You will find any errors from the head section using the console. -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/rat_favicon.jpg">
@@ -12,27 +10,25 @@
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Getting Started</title>
+	<script src="https://kit.fontawesome.com/642870eb52.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<a href="#main" class="skip">Skip to Main Content</a>
-	<header>	
+	<header>
+		<a href="#main" class="skip">Skip to Main Content</a>
+
 		<div class="navbar">
-			<img src="images/rat_favicon.jpg" alt="website logo" class="logo">
 			<nav>
 				<ul>
-					<li><a href = "index.html" >GYM RATCH</a></li>
-					<li class="active"><a href = "gettingstarted.html">GETTING STARTED</a></li>
-					<li><a href = "formbasics.html">FORM BASICS</a></li>
-					<li><a href = "aboutme.html">ABOUT ME</a></li>
+					<li><a href="index.html"><img src="images/rat_favicon.jpg" alt="website logo" class="logo"></a></li>
+					<li><a href = "index.html" >gym ratch</a></li>
+					<li class="active"><a href = "gettingstarted.html">getting started</a></li>
+					<li><a href = "formbasics.html">form basics</a></li>
+					<li><a href = "aboutme.html">about me</a></li>
 				</ul>
 			</nav>
 		</div>
 
-		<div class="divbarspacer"></div>
-
-		<h1>Getting Started</h1>
-
-		<div class="smallerspacer"></div>
+		<h1 class="regularpageheader">Getting Started</h1>
 	</header>
 
 	<main id="main">
@@ -41,7 +37,6 @@
 		<p>I'll admit that I don't wake up every day wanting to go to the gym. But I go anyways, and after I'm done with my session I'm always glad I had pushed myself to go.
 			At the same time, be kind to yourself if you miss a day. Results don't happen overnight, but they also won't disappear overnight either!</p>
 		
-		<div class="smallerspacer"></div>
 
 		<p>Here are some things I've found that help with motivating/disciplining me to go to the gym:</p>
 
@@ -96,11 +91,35 @@
 			</div>
 		</div>
 		
+		<form action="https://formspree.io/f/myyopknp" method="POST">
+			<span class="motivationheader">Need help starting? Have additional questions? Shoot me an email!</span>
+			<br>
+			<label for="email">Your email:
+		  		<input type="email" name="email" id="email" required>
+			</label>
+			<br>
+			<label for="regardsto">What do you want help with?
+				<select id="regardsto" name="regardsto" required>
+					<option value="outfit">What to wear to the gym</option>
+					<option value="goals">What goals to set for myself</option>
+					<option value="protein">Incorporating protein into my diet</option>
+					<option value="other">Other</option>
+				</select>
+			</label>
+			<br>
+			<label id="message">Your message:
+				<br>
+				<textarea name="message" id="message" rows="5" cols="155" required></textarea>
+			</label>
+			
+			<br>
+			<button type="submit">Send</button>
+	  	</form>
 
-		
 	</main>
 
 	<footer>
+		<i class="fa-solid fa-dumbbell"></i>
 		<p>RACHEL CHENG &copy; 2022</p>
 	</footer>
 </body>
