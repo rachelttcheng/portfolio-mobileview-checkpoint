@@ -79,20 +79,14 @@ header h1.regularpageheader {
     font-size: 25px;
     padding: 30px 25px 15px 25px;
     text-align: left;
-    margin: 0px 50px;
+    margin: 0px 25px;
     background-color: white;
-}
-
-.smallerspacer {
-    height: 25px;
-    background-color: white;
-    margin: 0px 50px;
 }
 
 main {
     text-align: left;
     background-color: white;
-    margin: 0px 50px;
+    margin: 0px 25px;
     line-height: 1.5em;
     padding: 0px 25px;
 }
@@ -102,6 +96,14 @@ main img:hover {
     transition: box-shadow 0.5s ease-in-out;
     transform: scale(1.05);
     transition: transform 0.5s;
+}
+
+p.firstparagraph {
+    padding-top: 15px;
+}
+
+p.lastparagraph {
+    padding-bottom: 15px;
 }
 
 .motivationpoint {
@@ -282,4 +284,11 @@ footer {
         position: absolute;
     }
 
+    main {
+        margin: 0px 50px;
+    }
+
+    header h1.regularpageheader {
+        margin: 0px 50px;
+    }
 }
