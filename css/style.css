@@ -59,6 +59,16 @@ a.skip{
     line-height: 1;
 }
 
+.largeintropic.fadein {
+    animation-name: appear;
+    animation-duration: 4s;
+}
+
+.largeintropic.skewin {
+    animation-name: skewtonormal;
+    animation-duration: 4s;
+}
+
 .largeintropic h1 {
     font-size: 50px;
     line-height: 1;
@@ -106,11 +116,15 @@ main img:hover {
     transition: transform 0.5s;
 }
 
-.firsttextelement {
+p {
+    margin-bottom: 10px;
+}
+
+.firstelement {
     padding-top: 15px;
 }
 
-.lasttextelement {
+.lastelement {
     padding-bottom: 15px;
 }
 
@@ -131,10 +145,62 @@ main img:hover {
     text-align: center;
 }
 
-.singlephoto img {
+.singlephoto img.medium {
     width: 150px;
 }
 
+.singlephoto img.large {
+    width: 300px;
+}
+
+.sidebysideimages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+img.square {
+    width: 275px;
+    height: 275px;
+}
+
+img.narrow {
+    width: 275px;
+    height: 200px;
+}
+
+.textabovethreephotos {
+    display: grid;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    grid-template-areas: "text text text"
+                         "img1 img2 img3";
+    grid-template-rows: fit-content() fit-content();
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.textabovethreephotos .text {
+    grid-area: text;
+}
+
+.textabovethreephotos .img1 {
+    grid-area: img1;
+    width: 100%;
+}
+
+.textabovethreephotos .img2 {
+    grid-area: img2;
+    width: 100%;
+}
+
+.textabovethreephotos .img3 {
+    grid-area: img3;
+    width: 100%;
+}
+
+/*
 .sidebysidetextimg {
     display: grid;
     grid-template: 50px repeat(3, 150px) / 0.25fr 1.5fr 150px 1fr 0.75fr;
@@ -186,22 +252,19 @@ main img:hover {
     max-height: 100%;
     overflow: hidden;
 }
+*/
 
 span.motivationheader {
     color: #cc3399;
     font-size: 1.25em;
-    line-height: 2em;
     text-align: left;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 main img {
-    padding: 10px 5px;
+    padding-bottom: 10px;
     object-fit: cover;
-}
-
-main img.horizontalinline {
-    width: 32.25%;
-    height: 350px;
 }
 
 main img.nexttotext {
@@ -209,27 +272,9 @@ main img.nexttotext {
     height: 550px;
 }
 
-div.centerimages {
-    text-align: center;
-}
-
-img.marginleft {
-    margin-left: 100px;
-}
-
 img.small {
     width: 125px;
     height: 175px;
-}
-
-img.square {
-    width: 300px;
-    height: 300px;
-}
-
-img.squareinline {
-    width: 250px;
-    height: 300px;
 }
 
 input {
@@ -250,6 +295,10 @@ input[type=submit] {
     cursor: pointer;
     width: 100%;
 }
+
+#message {
+    width: 100%;
+}
   
 footer {
     text-align: center;
@@ -260,6 +309,16 @@ footer {
 
 .fa-dumbbell {
     margin-bottom: 10px;
+}
+
+@keyframes appear {
+    from {opacity: 0.25;}
+    to {opacity: 1;}
+}
+
+@keyframes skewtonormal {
+    from {transform: skew(-15deg);}
+    to {transform: skew(0);}
 }
 
 @media screen and (min-width: 700px) {
@@ -312,4 +371,18 @@ footer {
     .singlephoto img {
         width: 200px;
     }
+
+    img.small {
+        width: 125px;
+    }
+
+    .sidebysideimages {
+        flex-direction: row;
+    }
+
+    img.narrow {
+        width: 33%;
+        height: 350px;
+    }
+
 }
