@@ -36,8 +36,16 @@ a.skip{
     margin-bottom: 20px;
 }
 
-.largeintropic {
+#index_intropic {
     background-image: url("../images/bicep_pose.jpg");
+}
+
+#aboutme_intropic {
+    background-image: url("../images/about_me_banner.jpg");
+    background-position: center;
+}
+
+.largeintropic {
     background-color: #ebf0ef;
     color: white;
     min-height: 325px;
@@ -98,11 +106,11 @@ main img:hover {
     transition: transform 0.5s;
 }
 
-p.firstparagraph {
+.firsttextelement {
     padding-top: 15px;
 }
 
-p.lastparagraph {
+.lasttextelement {
     padding-bottom: 15px;
 }
 
@@ -117,6 +125,14 @@ p.lastparagraph {
 
 .motivationpoint p {
     text-align: left;
+}
+
+.singlephoto {
+    text-align: center;
+}
+
+.singlephoto img {
+    width: 150px;
 }
 
 .sidebysidetextimg {
@@ -272,6 +288,7 @@ footer {
         left: 75%;
         transform: translate(-50%, -75%);
         position: absolute;
+        width: 500px;
     }
     
     .largeintropic p {
@@ -290,5 +307,9 @@ footer {
 
     header h1.regularpageheader {
         margin: 0px 50px;
+    }
+
+    .singlephoto img {
+        width: 200px;
     }
 }
